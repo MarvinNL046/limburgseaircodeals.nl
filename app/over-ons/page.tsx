@@ -251,9 +251,17 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="hidden md:block">
-              {/* Placeholder for an image - in a real implementation, you would add an actual image */}
-              <div className="bg-blue-500 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-white text-lg">Afbeelding: Team in Brunssum</span>
+              <div className="rounded-lg overflow-hidden h-64">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/9m-jkGgfLog" 
+                  title="StayCool Airco Brunssum Bedrijfsvideo" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                  className="w-full h-full object-cover"
+                ></iframe>
               </div>
             </div>
           </div>
