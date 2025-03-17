@@ -17,7 +17,7 @@ const nextConfig = {
   },
   env: {
     // Use the environment variable or fallback to the new domain
-    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://aircoinstallatiebrunssum.nl'
+    NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL || 'https://aircovergelijkenlimburg.nl'
   }
 }
 

@@ -11,7 +11,7 @@ try {
 }
 
 // Get the site URL from environment variables
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aircoinstallatiebrunssum.nl';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://aircovergelijkenlimburg.nl';
 console.log('Using site URL for sitemaps:', siteUrl);
 
 // Update the next-sitemap.config.js file with the correct site URL

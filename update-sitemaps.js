@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const oldDomain = 'https://aircoinstallatie-maastricht.nl';
-const newDomain = 'https://aircoinstallatiebrunssum.nl';
+const newDomain = 'https://aircovergelijkenlimburg.nl';
 
 // List of sitemap files to update
 const sitemapFiles = [

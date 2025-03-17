@@ -29,7 +29,7 @@ app.prepare().then(async () => {
       }
       
       // Set default if still not available
-      process.env.NEXT_PUBLIC_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://aircoinstallatiebrunssum.nl';
+      process.env.NEXT_PUBLIC_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://aircovergelijkenlimburg.nl';
     }
     
     console.log('Using site URL:', process.env.NEXT_PUBLIC_SITE_URL);

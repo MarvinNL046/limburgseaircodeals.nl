@@ -4,15 +4,15 @@ import { Breadcrumb } from "@/components/navigation/breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Over Ons | StayCool Airco Brunssum',
-  description: 'Maak kennis met StayCool Airco - uw lokale specialist voor airconditioning installatie, onderhoud en reparatie in Brunssum en omgeving. Ontdek onze expertise en persoonlijke aanpak.',
+  title: 'Over Ons | Airco Vergelijken Limburg',
+  description: 'Maak kennis met StayCool Airco - uw specialist voor airconditioning installatie, onderhoud en reparatie in heel Limburg. Ontdek onze expertise en persoonlijke aanpak.',
 };
 
 const features = [
   {
     icon: Building2,
-    title: 'Lokale Expertise',
-    description: 'Meer dan 10 jaar ervaring in airconditioning installatie in Brunssum en omgeving.'
+    title: 'Regionale Expertise',
+    description: 'Meer dan 10 jaar ervaring in airconditioning installatie in heel Limburg.'
   },
   {
     icon: Award,
@@ -22,7 +22,7 @@ const features = [
   {
     icon: MapPin,
     title: 'Regionale Kennis',
-    description: 'Specialistische kennis van lokale regelgeving en woningen in Brunssum en omgeving.'
+    description: 'Specialistische kennis van lokale regelgeving en woningen in heel Limburg.'
   },
   {
     icon: ThumbsUp,
@@ -35,7 +35,7 @@ const additionalFeatures = [
   {
     icon: Clock,
     title: 'Snelle Service',
-    description: 'Binnen 24 uur reactie op serviceverzoeken in de regio Brunssum.'
+    description: 'Binnen 24 uur reactie op serviceverzoeken in heel Limburg.'
   },
   {
     icon: ShieldCheck,
@@ -57,17 +57,17 @@ const additionalFeatures = [
 const testimonials = [
   {
     name: "Familie Janssen",
-    location: "Centrum, Brunssum",
+    location: "Brunssum, Limburg",
     quote: "StayCool heeft onze woning voorzien van een perfect geïntegreerd aircosysteem. De monteurs waren professioneel en kwamen met creatieve oplossingen voor onze specifieke situatie."
   },
   {
     name: "Restaurant De Mijn",
-    location: "Treebeek, Brunssum",
+    location: "Treebeek, Limburg",
     quote: "Onze gasten genieten nu van een perfect klimaat, ongeacht het seizoen. De installatie werd buiten openingstijden uitgevoerd, zonder enige verstoring van onze bedrijfsvoering."
   },
   {
-    name: "Kantoorpand Brunssum",
-    location: "Bedrijventerrein, Brunssum",
+    name: "Kantoorpand Maastricht",
+    location: "Bedrijventerrein, Limburg",
     quote: "De multi-split oplossing die StayCool installeerde, bespaart ons maandelijks aanzienlijk op energiekosten. Professioneel advies en vakkundige installatie."
   }
 ];
@@ -82,16 +82,16 @@ export default function AboutPage() {
       <Breadcrumb items={breadcrumbItems} />
       
       <section className="mb-16">
-        <h1 className="text-4xl font-bold mb-6">Over StayCool Airco Brunssum</h1>
+        <h1 className="text-4xl font-bold mb-6">Over Airco Vergelijken Limburg</h1>
         <div className="prose max-w-none">
           <p className="text-xl mb-6 text-muted-foreground">
-            Uw lokale specialist voor airconditioning in Brunssum en omgeving.
+            Uw specialist voor airconditioning in heel Limburg.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div>
               <p className="mb-4">
-                StayCool Airco is uw betrouwbare partner voor alle airconditioning oplossingen in Brunssum en omgeving. 
-                Als lokale specialist begrijpen we de unieke uitdagingen van het klimaat in Zuid-Limburg en de verschillende 
+                Airco Vergelijken Limburg is uw betrouwbare partner voor alle airconditioning oplossingen in heel Limburg. 
+                Als regionale specialist begrijpen we de unieke uitdagingen van het klimaat in Limburg en de verschillende 
                 woningtypen in de regio.
               </p>
               <p className="mb-4">
@@ -104,7 +104,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-blue-50 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold mb-4">Waarom kiezen voor een lokale specialist?</h3>
+              <h3 className="text-xl font-semibold mb-4">Waarom kiezen voor een regionale specialist?</h3>
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
-                  <span>Ervaring met verschillende woningtypen in Brunssum</span>
+                  <span>Ervaring met verschillende woningtypen in Limburg</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
@@ -124,7 +124,7 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
-                  <span>Betrokkenheid bij de lokale gemeenschap</span>
+                  <span>Betrokkenheid bij de regionale gemeenschap</span>
                 </li>
               </ul>
             </div>
@@ -146,12 +146,12 @@ export default function AboutPage() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8">Onze Diensten in Brunssum</h2>
+        <h2 className="text-3xl font-bold mb-8">Onze Diensten in Limburg</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
             <h3 className="text-xl font-semibold mb-4 text-blue-600">Airco Installatie</h3>
             <p className="mb-4">
-              Professionele installatie van airconditioning systemen, perfect afgestemd op uw woning of bedrijf in Brunssum. 
+              Professionele installatie van airconditioning systemen, perfect afgestemd op uw woning of bedrijf in heel Limburg. 
               Van moderne split-units tot geavanceerde multi-split systemen.
             </p>
             <Link href="/diensten" className="text-blue-600 hover:underline font-medium">
@@ -161,7 +161,7 @@ export default function AboutPage() {
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
             <h3 className="text-xl font-semibold mb-4 text-blue-600">Onderhoud & Service</h3>
             <p className="mb-4">
-              Regelmatig onderhoud en snelle service voor alle merken airconditioners in Brunssum. 
+              Regelmatig onderhoud en snelle service voor alle merken airconditioners in Limburg. 
               Voorkom storingen en verleng de levensduur van uw systeem.
             </p>
             <Link href="/kennisbank/onderhoud-tips" className="text-blue-600 hover:underline font-medium">
@@ -171,7 +171,7 @@ export default function AboutPage() {
           <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
             <h3 className="text-xl font-semibold mb-4 text-blue-600">Advies & Offerte</h3>
             <p className="mb-4">
-              Persoonlijk advies over de beste airconditioning oplossing voor uw situatie in Brunssum. 
+              Persoonlijk advies over de beste airconditioning oplossing voor uw situatie in Limburg. 
               Vrijblijvende offerte met transparante prijzen.
             </p>
             <Link href="/offerte" className="text-blue-600 hover:underline font-medium">
@@ -184,18 +184,18 @@ export default function AboutPage() {
       <section className="bg-blue-50 p-8 rounded-lg mb-16">
         <h2 className="text-3xl font-bold mb-6">Onze Missie</h2>
         <p className="text-lg mb-4">
-          Wij streven ernaar om hoogwaardige klimaatoplossingen toegankelijk te maken voor iedereen in Brunssum en omgeving. 
-          Door onze lokale expertise te combineren met persoonlijke service, zorgen we ervoor dat elk project succesvol wordt afgerond.
+          Wij streven ernaar om hoogwaardige klimaatoplossingen toegankelijk te maken voor iedereen in Limburg. 
+          Door onze regionale expertise te combineren met persoonlijke service, zorgen we ervoor dat elk project succesvol wordt afgerond.
         </p>
         <p className="text-lg">
           Onze focus ligt op duurzame, energiezuinige systemen die niet alleen comfort bieden, maar ook bijdragen aan een lagere 
-          energierekening en een kleinere ecologische voetafdruk. Als lokaal bedrijf voelen we ons verantwoordelijk voor het 
-          welzijn van onze gemeenschap en het behoud van het unieke karakter van Brunssum.
+          energierekening en een kleinere ecologische voetafdruk. Als regionaal bedrijf voelen we ons verantwoordelijk voor het 
+          welzijn van onze gemeenschap en het behoud van het unieke karakter van Limburg.
         </p>
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8">Meer Redenen om voor StayCool te Kiezen</h2>
+        <h2 className="text-3xl font-bold mb-8">Meer Redenen om voor Airco Vergelijken Limburg te Kiezen</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {additionalFeatures.map((feature) => {
             const Icon = feature.icon;
@@ -233,7 +233,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-4">Klaar om te Beginnen?</h2>
               <p className="mb-6">
                 Neem vandaag nog contact met ons op voor een vrijblijvend adviesgesprek of offerte. 
-                Onze experts in Brunssum staan voor u klaar.
+                Onze experts in Limburg staan voor u klaar.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link 
@@ -256,7 +256,7 @@ export default function AboutPage() {
                   width="100%" 
                   height="100%" 
                   src="https://www.youtube.com/embed/9m-jkGgfLog" 
-                  title="StayCool Airco Brunssum Bedrijfsvideo" 
+                  title="Airco Vergelijken Limburg Bedrijfsvideo" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen

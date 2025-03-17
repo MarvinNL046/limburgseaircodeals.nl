@@ -12,12 +12,12 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://aircoinstallatiebrunssum.nl'),
+  metadataBase: new URL('https://aircovergelijkenlimburg.nl'),
   title: {
-    default: 'Airco Installatie Brunssum | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
-    template: '%s | StayCool Airco Brunssum'
+    default: 'Airco Vergelijken Limburg | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
+    template: '%s | Airco Vergelijken Limburg'
   },
-  description: 'Dé airco specialist in Brunssum! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit ✓ 5 jaar garantie. Bel nu: 046 202 1430',
+  description: 'Dé airco specialist in Limburg! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit ✓ 5 jaar garantie. Bel nu: 046 202 1430',
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -30,18 +30,19 @@ export const metadata = {
   },
   keywords: [
     // Primaire zoektermen
-    'airco installatie brunssum',
-    'airco specialist brunssum',
-    'airco monteur brunssum',
-    'airco bedrijf brunssum',
-    'airconditioning brunssum',
+    'airco vergelijken limburg',
+    'airco installatie limburg',
+    'airco specialist limburg',
+    'airco monteur limburg',
+    'airco bedrijf limburg',
+    'airconditioning limburg',
     
     // Installatie en service
     'professionele airco installatie',
     'airco installatie kosten',
     'split airco installatie',
-    'multisplit airco brunssum',
-    'airco onderhoud brunssum',
+    'multisplit airco limburg',
+    'airco onderhoud limburg',
     'airco storing oplossen',
     'snelle airco service',
     
@@ -59,14 +60,14 @@ export const metadata = {
     'beste airco voor thuis',
     
     // Commercieel
-    'airco kopen brunssum',
-    'airco brunssum prijzen',
+    'airco kopen limburg',
+    'airco limburg prijzen',
     'airco prijsvergelijking',
     'airco financiering',
     'goedkope airco installatie',
     
     // Expertise en advies
-    'airco showroom brunssum',
+    'airco showroom limburg',
     'airco advies op maat',
     'gecertificeerde airco monteurs',
     'airco merken',
@@ -95,28 +96,28 @@ export const metadata = {
     type: 'website',
     locale: 'nl_NL',
     url: '/',
-    siteName: 'StayCool Airco Brunssum',
-    title: 'Airco Installatie Brunssum | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
-    description: 'Dé airco specialist in Brunssum! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit',
+    siteName: 'Airco Vergelijken Limburg',
+    title: 'Airco Vergelijken Limburg | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
+    description: 'Dé airco specialist in Limburg! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit',
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'StayCool Airco Brunssum - Professionele Airconditioning Services'
+        alt: 'Airco Vergelijken Limburg - Professionele Airconditioning Services'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Airco Installatie Brunssum | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
-    description: 'Dé airco specialist in Brunssum! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie',
+    title: 'Airco Vergelijken Limburg | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
+    description: 'Dé airco specialist in Limburg! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie',
     images: ['/opengraph-image'],
     creator: '@staycoolairco',
     site: '@staycoolairco'
   },
   alternates: {
-    canonical: 'https://aircoinstallatiebrunssum.nl'
+    canonical: 'https://aircovergelijkenlimburg.nl'
   },
   robots: {
     index: true,
@@ -130,7 +131,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: ['F7ziqeuiZtQK3wDaKBZ65SgfDN61xAKq09v9PUpqQSY', 'MdrWkChgCAkLEzChgLv_KvDquI5UppXLSFI-WrxLS6E'],
+    google: ['F7ziqeuiZtQK3wDaKBZ65SgfDN61xAKq09v9PUpqQSY', 'MdrWkChgCAkLEzChgLv_KvDquI5UppXLSFI-WrxLS6E', 'N96MEbLpvVmVnNfxrbKpEgBPVi3cDL-gveDkknmwbvo'],
     yandex: 'verification_token',
     yahoo: 'verification_token',
   }
