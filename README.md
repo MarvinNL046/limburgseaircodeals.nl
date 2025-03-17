@@ -1,6 +1,6 @@
-# Airco Offerte Limburg
+# Limburgse Airco Deals
 
-Modern Next.js website voor Airco Offerte Limburg, gebouwd met de nieuwste technologieën.
+Modern Next.js website voor Limburgse Airco Deals, gebouwd met de nieuwste technologieën.
 
 ## Technologieën
 
@@ -27,13 +27,13 @@ Modern Next.js website voor Airco Offerte Limburg, gebouwd met de nieuwste techn
 1. Clone de repository:
 
 ```bash
-https://github.com/MarvinNL046/airco_offertelimburg/tree/main
+https://github.com/MarvinNL046/limburgseaircodeals.nl/tree/main
 ```
 
 2. Installeer dependencies:
 
 ```bash
-cd airco-offerte-limburg
+cd limburgseaircodeals.nl
 npm install
 ```
 

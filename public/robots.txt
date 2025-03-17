@@ -7,9 +7,9 @@ Disallow: /_next/
 Disallow: /private/
 
 # Host
-Host: https://aircoinstallatiebrunssum.nl
+Host: https://limburgseaircodeals.nl
 
 # Sitemaps
-Sitemap: https://aircoinstallatiebrunssum.nl/sitemap.xml
-Sitemap: https://aircoinstallatiebrunssum.nl/sitemap-locations.xml
-Sitemap: https://aircoinstallatiebrunssum.nl/sitemap-services.xml
+Sitemap: https://limburgseaircodeals.nl/sitemap.xml
+Sitemap: https://limburgseaircodeals.nl/sitemap-locations.xml
+Sitemap: https://limburgseaircodeals.nl/sitemap-services.xml

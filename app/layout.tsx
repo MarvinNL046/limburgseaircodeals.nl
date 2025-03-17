@@ -12,10 +12,10 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://aircoinstallatiebrunssum.nl'),
+  metadataBase: new URL('https://limburgseaircodeals.nl'),
   title: {
-    default: 'Airco Installatie Brunssum | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
-    template: '%s | Airco Installatie Brunssum'
+    default: 'Limburgse Airco Deals | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
+    template: '%s | Limburgse Airco Deals'
   },
   description: 'Dé airco specialist in Limburg! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit ✓ 5 jaar garantie. Bel nu: 046 202 1430',
   icons: {
@@ -30,7 +30,8 @@ export const metadata = {
   },
   keywords: [
     // Primaire zoektermen
-    'airco installatie brunssum',
+    'limburgse airco deals',
+    'airco deals limburg',
     'airco installatie limburg',
     'airco specialist limburg',
     'airco monteur limburg',
@@ -96,28 +97,28 @@ export const metadata = {
     type: 'website',
     locale: 'nl_NL',
     url: '/',
-    siteName: 'Airco Installatie Brunssum',
-    title: 'Airco Installatie Brunssum | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
+    siteName: 'Limburgse Airco Deals',
+    title: 'Limburgse Airco Deals | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
     description: 'Dé airco specialist in Limburg! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie ✓ Beste prijs-kwaliteit',
     images: [
       {
         url: '/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Airco Installatie Brunssum - Professionele Airconditioning Services'
+        alt: 'Limburgse Airco Deals - Professionele Airconditioning Services'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Airco Installatie Brunssum | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
+    title: 'Limburgse Airco Deals | StayCool Airco | Gratis Offerte Binnen 24 Uur ✓',
     description: 'Dé airco specialist in Limburg! ✓ Professionele installatie door StayCool Airco ✓ Erkend installateur ✓ Alle topmerken ✓ Binnen 24 uur reactie',
     images: ['/opengraph-image'],
     creator: '@staycoolairco',
     site: '@staycoolairco'
   },
   alternates: {
-    canonical: 'https://aircoinstallatiebrunssum.nl'
+    canonical: 'https://limburgseaircodeals.nl'
   },
   robots: {
     index: true,
@@ -131,7 +132,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: ['F7ziqeuiZtQK3wDaKBZ65SgfDN61xAKq09v9PUpqQSY', 'MdrWkChgCAkLEzChgLv_KvDquI5UppXLSFI-WrxLS6E', 'N96MEbLpvVmVnNfxrbKpEgBPVi3cDL-gveDkknmwbvo'],
+    google: ['F7ziqeuiZtQK3wDaKBZ65SgfDN61xAKq09v9PUpqQSY', 'MdrWkChgCAkLEzChgLv_KvDquI5UppXLSFI-WrxLS6E', 'N96MEbLpvVmVnNfxrbKpEgBPVi3cDL-gveDkknmwbvo', 'i2scJbpfEIWbid_8EdqTJVrhj8YkXaYAH_xLceH-2Zk'],
     yandex: 'verification_token',
     yahoo: 'verification_token',
   }

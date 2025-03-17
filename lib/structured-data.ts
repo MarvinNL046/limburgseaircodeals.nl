@@ -4,9 +4,9 @@ export function generateOrganizationSchema(): WithContext<Organization> {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Airco Installatie Brunssum",
-    url: "https://aircoinstallatiebrunssum.nl",
-    logo: "https://aircoinstallatiebrunssum.nl/logo.png",
+    name: "Limburgse Airco Deals",
+    url: "https://limburgseaircodeals.nl",
+    logo: "https://limburgseaircodeals.nl/logo.png",
     description: "Professionele airconditioning services in Limburg",
     address: {
       "@type": "PostalAddress",
@@ -19,9 +19,9 @@ export function generateOrganizationSchema(): WithContext<Organization> {
       contactType: "customer service",
     },
     sameAs: [
-      "https://facebook.com/aircoinstallatiebrunssum",
-      "https://instagram.com/aircoinstallatiebrunssum",
-      "https://linkedin.com/company/aircoinstallatiebrunssum",
+      "https://facebook.com/limburgseaircodeals",
+      "https://instagram.com/limburgseaircodeals",
+      "https://linkedin.com/company/limburgseaircodeals",
     ],
   }
 }
@@ -38,7 +38,7 @@ export function generateServiceSchema(service: {
     description: service.description,
     provider: {
       "@type": "Organization",
-      name: "Airco Installatie Brunssum",
+      name: "Limburgse Airco Deals",
     },
     areaServed: {
       "@type": "State",
@@ -59,9 +59,9 @@ export function generateLocalBusinessSchema(city: string): WithContext<LocalBusi
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: `Airco Installatie Brunssum - ${city}`,
+    name: `Limburgse Airco Deals - ${city}`,
     description: `Professionele airconditioning installatie en onderhoud in ${city}. Erkend en gecertificeerd installateur.`,
-    url: `https://aircoinstallatiebrunssum.nl/steden/${city.toLowerCase()}`,
+    url: `https://limburgseaircodeals.nl/steden/${city.toLowerCase()}`,
     telephone: "+31462021430",
     email: "info@staycoolairco.nl",
     areaServed: {

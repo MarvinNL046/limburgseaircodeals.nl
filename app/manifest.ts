@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Airco Installatie Brunssum',
-    short_name: 'Airco Brunssum',
+    name: 'Limburgse Airco Deals',
+    short_name: 'Limburgse Airco',
     description: 'Professionele airconditioning services in Limburg',
     start_url: '/',
     display: 'standalone',

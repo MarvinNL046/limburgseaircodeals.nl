@@ -21,7 +21,7 @@ export function HeroSection() {
               className="text-4xl font-bold tracking-tight sm:text-6xl"
               tabIndex={-1}
             >
-              Airco Installatie Brunssum
+              Limburgse Airco Deals
             </h1>
             <p className="mt-2 text-3xl font-semibold text-blue-100">
               Professionele Airco Installatie

@@ -1,7 +1,7 @@
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://aircoinstallatiebrunssum.nl",
+  siteUrl: "https://limburgseaircodeals.nl",
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
@@ -17,8 +17,8 @@ module.exports = {
       },
     ],
     additionalSitemaps: [
-      "https://aircoinstallatiebrunssum.nl/sitemap-locations.xml",
-      "https://aircoinstallatiebrunssum.nl/sitemap-services.xml",
+      "https://limburgseaircodeals.nl/sitemap-locations.xml",
+      "https://limburgseaircodeals.nl/sitemap-services.xml",
     ],
   },
   exclude: ['/404', '/500', '/offline'],

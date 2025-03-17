@@ -20,7 +20,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2">
               <AirVent className="h-6 w-6" />
-              <span className="font-bold">Airco Installatie Brunssum</span>
+              <span className="font-bold">Limburgse Airco Deals</span>
             </div>
             <p className="mt-4 text-sm text-blue-200">
               Professionele airconditioning installatie in heel Limburg. Erkend en gecertificeerd.

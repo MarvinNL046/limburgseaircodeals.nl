@@ -14,7 +14,7 @@ if (!process.env.NEXT_PUBLIC_SITE_URL) {
   }
   
   // Set default if still not available
-  process.env.NEXT_PUBLIC_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://aircoinstallatiebrunssum.nl';
+  process.env.NEXT_PUBLIC_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://limburgseaircodeals.nl';
 }
 
 console.log('Using site URL:', process.env.NEXT_PUBLIC_SITE_URL);
