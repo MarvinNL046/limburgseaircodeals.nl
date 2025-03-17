@@ -3,7 +3,7 @@ import { EnergieContent } from "@/components/kennisbank/energie/energie-content"
 import { Breadcrumb } from "@/components/navigation/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Energiebesparende Tips voor uw Airconditioning | Airco Offerte Limburg",
+  title: "Energiebesparende Tips voor uw Airconditioning | Airco Installatie Brunssum",
   description: "Ontdek hoe u uw energierekening kunt verlagen met deze praktische tips voor het gebruik van uw airconditioning.",
 }
 

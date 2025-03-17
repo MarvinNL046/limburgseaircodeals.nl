@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">
-              Airco Offerte Limburg
+              Airco Installatie Brunssum
             </h3>
             <p className="mb-4">
               Uw specialist in airconditioning installatie en onderhoud in heel Limburg.
@@ -94,7 +94,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2" />
-                <span>info@aircooffertelimburg.nl</span>
+                <span>info@aircoinstallatiebrunssum.nl</span>
               </li>
               <li className="flex items-center">
                 <MapPin className="w-5 h-5 mr-2" />
@@ -106,7 +106,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p>
-            © {new Date().getFullYear()} Airco Offerte Limburg. Alle rechten voorbehouden.
+            © {new Date().getFullYear()} Airco Installatie Brunssum. Alle rechten voorbehouden.
           </p>
         </div>
       </div>

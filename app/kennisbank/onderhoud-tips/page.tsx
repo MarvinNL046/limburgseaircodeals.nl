@@ -3,7 +3,7 @@ import { OnderhoudsContent } from "@/components/kennisbank/onderhoud/onderhoud-c
 import { Breadcrumb } from "@/components/navigation/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Onderhoudstips voor Optimale Prestaties | Airco Offerte Limburg",
+  title: "Onderhoudstips voor Optimale Prestaties | Airco Installatie Brunssum",
   description: "Leer hoe u uw airconditioning in topconditie houdt met deze essentiële onderhoudstips.",
 }
 

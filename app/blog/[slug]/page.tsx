@@ -21,20 +21,20 @@ export function generateMetadata({ params }: BlogPostPageProps): Metadata {
 
   if (!post) {
     return {
-      title: "Artikel niet gevonden | Airco Offerte Limburg",
+      title: "Artikel niet gevonden | Airco Installatie Brunssum",
       description: "Het opgevraagde artikel kon niet worden gevonden.",
     }
   }
 
   return {
-    title: `${post.title} | Airco Offerte Limburg`,
+    title: `${post.title} | Airco Installatie Brunssum`,
     description: post.excerpt,
     openGraph: {
       title: post.title,
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
-      authors: ["Airco Offerte Limburg"],
+      authors: ["Airco Installatie Brunssum"],
     },
   }
 }

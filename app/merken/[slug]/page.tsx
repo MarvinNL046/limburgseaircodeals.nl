@@ -26,13 +26,13 @@ export function generateMetadata({ params }: BrandPageProps): Metadata {
 
   if (!brand) {
     return {
-      title: "Merk niet gevonden | Airco Offerte Limburg",
+      title: "Merk niet gevonden | Airco Installatie Brunssum",
       description: "Het opgevraagde merk kon niet worden gevonden.",
     }
   }
 
   return {
-    title: `${brand.name} Airconditioners | Airco Offerte Limburg`,
+    title: `${brand.name} Airconditioners | Airco Installatie Brunssum`,
     description: brand.description,
   }
 }

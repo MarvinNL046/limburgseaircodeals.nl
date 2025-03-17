@@ -4,7 +4,7 @@ import { PriceCalculator } from "@/components/calculators/price-calculator"
 import { ContactForm } from "@/components/contact-form"
 
 export const metadata: Metadata = {
-  title: "Offerte Aanvragen | Airco Offerte Limburg",
+  title: "Offerte Aanvragen | Airco Installatie Brunssum",
   description: "Vraag een vrijblijvende offerte aan voor uw airconditioning project. Ontvang binnen 24 uur een offerte op maat.",
 }
 

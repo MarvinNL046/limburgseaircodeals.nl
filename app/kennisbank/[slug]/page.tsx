@@ -17,19 +17,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!article) {
     return {
-      title: "Artikel niet gevonden | Airco Offerte Limburg",
+    title: "Artikel niet gevonden | Airco Installatie Brunssum",
       description: "Het opgevraagde artikel bestaat niet.",
     }
   }
 
   return {
-    title: `${article.title} | Kennisbank | Airco Offerte Limburg`,
+    title: `${article.title} | Kennisbank | Airco Installatie Brunssum`,
     description: article.description,
     openGraph: {
-      title: `${article.title} | Kennisbank | Airco Offerte Limburg`,
+      title: `${article.title} | Kennisbank | Airco Installatie Brunssum`,
       description: article.description,
-      url: `https://aircooffertelimburg.nl/kennisbank/${params.slug}`,
-      siteName: "Airco Offerte Limburg",
+      url: `https://aircoinstallatiebrunssum.nl/kennisbank/${params.slug}`,
+      siteName: "Airco Installatie Brunssum",
       locale: "nl_NL",
       type: "article",
     },

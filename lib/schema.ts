@@ -4,8 +4,8 @@ export function generateOrganizationSchema(): WithContext<Organization> {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Airco Vergelijken Limburg",
-    url: "https://aircovergelijkenlimburg.nl",
+    name: "Airco Installatie Brunssum",
+    url: "https://aircoinstallatiebrunssum.nl",
     logo: "https://staycoolairco.nl/logo.png",
     description: "Professionele airconditioning installatie in heel Limburg door StayCool Airco",
     address: {
@@ -66,7 +66,7 @@ export function generateLocalBusinessSchema(city: string): WithContext<LocalBusi
     "@type": "LocalBusiness",
     name: `StayCool Airco - Airco Installatie ${city}`,
     description: `Professionele airconditioning installatie en onderhoud in ${city} door StayCool Airco. Erkend en gecertificeerd installateur.`,
-    url: `https://aircovergelijkenlimburg.nl/steden/${city.toLowerCase()}`,
+    url: `https://aircoinstallatiebrunssum.nl/steden/${city.toLowerCase()}`,
     telephone: "+31462021430",
     email: "info@staycoolairco.nl",
     areaServed: {
@@ -94,7 +94,7 @@ export function generateBreadcrumbSchema(items: { name: string; item: string }[]
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `https://aircovergelijkenlimburg.nl${item.item}`,
+      item: `https://aircoinstallatiebrunssum.nl${item.item}`,
     })),
   }
 }

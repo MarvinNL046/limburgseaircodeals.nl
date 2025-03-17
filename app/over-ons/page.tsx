@@ -4,7 +4,7 @@ import { Breadcrumb } from "@/components/navigation/breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Over Ons | Airco Vergelijken Limburg',
+  title: 'Over Ons | Airco Installatie Brunssum',
   description: 'Maak kennis met StayCool Airco - uw specialist voor airconditioning installatie, onderhoud en reparatie in heel Limburg. Ontdek onze expertise en persoonlijke aanpak.',
 };
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
       <Breadcrumb items={breadcrumbItems} />
       
       <section className="mb-16">
-        <h1 className="text-4xl font-bold mb-6">Over Airco Vergelijken Limburg</h1>
+        <h1 className="text-4xl font-bold mb-6">Over Airco Installatie Brunssum</h1>
         <div className="prose max-w-none">
           <p className="text-xl mb-6 text-muted-foreground">
             Uw specialist voor airconditioning in heel Limburg.
@@ -90,7 +90,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div>
               <p className="mb-4">
-                Airco Vergelijken Limburg is uw betrouwbare partner voor alle airconditioning oplossingen in heel Limburg. 
+                Airco Installatie Brunssum is uw betrouwbare partner voor alle airconditioning oplossingen in heel Limburg.
                 Als regionale specialist begrijpen we de unieke uitdagingen van het klimaat in Limburg en de verschillende 
                 woningtypen in de regio.
               </p>
@@ -195,7 +195,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-8">Meer Redenen om voor Airco Vergelijken Limburg te Kiezen</h2>
+        <h2 className="text-3xl font-bold mb-8">Meer Redenen om voor Airco Installatie Brunssum te Kiezen</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {additionalFeatures.map((feature) => {
             const Icon = feature.icon;
@@ -256,7 +256,7 @@ export default function AboutPage() {
                   width="100%" 
                   height="100%" 
                   src="https://www.youtube.com/embed/9m-jkGgfLog" 
-                  title="Airco Vergelijken Limburg Bedrijfsvideo" 
+                  title="Airco Installatie Brunssum Bedrijfsvideo"
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                   allowFullScreen

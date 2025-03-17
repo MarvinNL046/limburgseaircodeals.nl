@@ -4,8 +4,8 @@ import ContactForm from '@/components/forms/ContactForm';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact | Airco Offerte Limburg',
-  description: 'Neem contact op met Airco Offerte Limburg voor een vrijblijvende offerte of advies over airconditioning installatie en onderhoud.',
+  title: 'Contact | Airco Installatie Brunssum',
+  description: 'Neem contact op met Airco Installatie Brunssum voor een vrijblijvende offerte of advies over airconditioning installatie en onderhoud.',
 };
 
 const contactInfo = [

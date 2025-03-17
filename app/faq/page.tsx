@@ -9,7 +9,7 @@ import { Breadcrumb } from "@/components/navigation/breadcrumb"
 import { CTAWithForm } from "@/components/sections/cta-with-form"
 
 export const metadata: Metadata = {
-  title: "Veelgestelde Vragen | Airco Offerte Limburg",
+  title: "Veelgestelde Vragen | Airco Installatie Brunssum",
   description: "Vind antwoorden op veelgestelde vragen over airconditioning, installatie, onderhoud en meer.",
 }
 

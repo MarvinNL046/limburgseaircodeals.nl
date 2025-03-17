@@ -8,7 +8,7 @@ import { generateOrganizationSchema } from "@/lib/schema"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Airco Merken | Airco Offerte Limburg",
+  title: "Airco Merken | Airco Installatie Brunssum",
   description: "Ontdek ons uitgebreide assortiment aan hoogwaardige airconditioning merken. Van Daikin tot Mitsubishi, wij bieden alleen de beste kwaliteit.",
   keywords: [
     "airco merken",

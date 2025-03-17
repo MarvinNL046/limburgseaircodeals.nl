@@ -15,7 +15,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold text-blue-600">
-            Airco Offerte Limburg
+            Airco Installatie Brunssum
           </Link>
 
           {/* Desktop Navigation */}

@@ -21,7 +21,7 @@ export default function OpenGraphImage() {
           textAlign: 'center',
         }}
       >
-        Airco Offerte Limburg
+        Airco Installatie Brunssum
       </h1>
       <p
         style={{

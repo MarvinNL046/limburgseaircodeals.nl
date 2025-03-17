@@ -3,7 +3,7 @@ import { KlimaatContent } from "@/components/kennisbank/klimaat/klimaat-content"
 import { Breadcrumb } from "@/components/navigation/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Alles over Klimaatbeheersing | Airco Offerte Limburg",
+  title: "Alles over Klimaatbeheersing | Airco Installatie Brunssum",
   description: "Een complete gids over moderne klimaatbeheersing voor uw woning of bedrijf",
 }
 

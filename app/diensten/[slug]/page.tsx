@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${dienst.title} | Airco Offerte Limburg`,
+    title: `${dienst.title} | Airco Installatie Brunssum`,
     description: dienst.description,
     openGraph: {
-      title: `${dienst.title} | Airco Offerte Limburg`,
+      title: `${dienst.title} | Airco Installatie Brunssum`,
       description: dienst.description,
-      url: `https://aircooffertelimburg.nl/diensten/${params.slug}`,
-      siteName: "Airco Offerte Limburg",
+      url: `https://aircoinstallatiebrunssum.nl/diensten/${params.slug}`,
+      siteName: "Airco Installatie Brunssum",
       locale: "nl_NL",
       type: "website",
     },

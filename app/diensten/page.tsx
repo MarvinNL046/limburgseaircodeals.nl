@@ -7,7 +7,7 @@ import Link from "next/link"
 import diensten from "@/data/diensten.json"
 
 export const metadata: Metadata = {
-  title: "Onze Diensten | Airco Offerte Limburg",
+  title: "Onze Diensten | Airco Installatie Brunssum",
   description: "Bekijk ons complete aanbod van airconditioning diensten in Limburg. Van installatie en onderhoud tot reparatie, wij zijn uw betrouwbare partner.",
   keywords: [
     "airco diensten",

@@ -5,7 +5,7 @@ import { Breadcrumb } from "@/components/navigation/breadcrumb"
 import { blogPosts } from "@/data/blog-posts"
 
 export const metadata: Metadata = {
-  title: "Blog | Airco Offerte Limburg",
+  title: "Blog | Airco Installatie Brunssum",
   description: "Lees onze laatste artikelen over airconditioning, klimaatbeheersing, energiebesparing en meer.",
   keywords: [
     "airco blog",

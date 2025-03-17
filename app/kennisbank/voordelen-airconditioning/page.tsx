@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import { VoordelenContent } from "@/components/kennisbank/voordelen/voordelen-content"
 
 export const metadata: Metadata = {
-  title: "De 7 Belangrijkste Voordelen van een Airconditioning | Airco Offerte Limburg",
+  title: "De 7 Belangrijkste Voordelen van een Airconditioning | Airco Installatie Brunssum",
   description: "Ontdek waarom een airconditioning meer is dan alleen koeling en hoe het uw leefcomfort kan verbeteren.",
 }
 

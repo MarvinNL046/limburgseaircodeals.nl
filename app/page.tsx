@@ -9,10 +9,10 @@ import { generateOrganizationSchema } from "@/lib/schema"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: 'Airco Vergelijken Limburg | #1 in Airconditioning ✓',
+  title: 'Airco Installatie Brunssum | #1 in Airconditioning ✓',
   description: 'Dé airco specialist van Limburg! Professionele airco installatie voor woning en bedrijf door StayCool Airco. ✓ Gratis offerte ✓ Erkend installateur ✓ Alle topmerken ✓ 5 jaar garantie. Bel: 046 202 1430',
   alternates: {
-    canonical: 'https://aircovergelijkenlimburg.nl'
+    canonical: 'https://aircoinstallatiebrunssum.nl'
   }
 }
 

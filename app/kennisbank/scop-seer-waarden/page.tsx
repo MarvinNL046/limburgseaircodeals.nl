@@ -3,7 +3,7 @@ import { ArticleContent } from "@/components/kennisbank/article-content"
 import { Breadcrumb } from "@/components/navigation/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "SCOP en SEER Waarden Uitgelegd | Airco Offerte Limburg",
+  title: "SCOP en SEER Waarden Uitgelegd | Airco Installatie Brunssum",
   description: "Alles wat u moet weten over de energie-efficiëntie van airconditioners",
 }
 

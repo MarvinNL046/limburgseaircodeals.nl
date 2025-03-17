@@ -7,9 +7,9 @@ Disallow: /_next/
 Disallow: /private/
 
 # Host
-Host: https://aircovergelijkenlimburg.nl
+Host: https://aircoinstallatiebrunssum.nl
 
 # Sitemaps
-Sitemap: https://aircovergelijkenlimburg.nl/sitemap.xml
-Sitemap: https://aircovergelijkenlimburg.nl/sitemap-locations.xml
-Sitemap: https://aircovergelijkenlimburg.nl/sitemap-services.xml
+Sitemap: https://aircoinstallatiebrunssum.nl/sitemap.xml
+Sitemap: https://aircoinstallatiebrunssum.nl/sitemap-locations.xml
+Sitemap: https://aircoinstallatiebrunssum.nl/sitemap-services.xml
