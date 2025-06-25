@@ -56,11 +56,11 @@ export function CTABannerOptimized({ theme = 'light', position = 'top' }: CTABan
             </div>
             <div className={`text-center sm:text-left ${textColor}`}>
               <p className="text-sm sm:text-base font-semibold">
-                🎉 Limburgse Airco Deal: 10% Korting op Alle Installaties!
+                ⚡ LAATSTE KANS: Extra voordeel + Gratis installatie deze week!
               </p>
               <p className="text-xs sm:text-sm opacity-90">
-                <Clock className="inline w-3 h-3 mr-1" />
-                Geldig t/m {new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toLocaleDateString('nl-NL')}
+                <Clock className="inline w-3 h-3 mr-1 animate-pulse" />
+                <span className="font-bold">Nog 72 uur</span> • Direct boeken = Direct voordeel
               </p>
             </div>
           </div>
@@ -118,10 +118,13 @@ export function StickyCTABanner() {
 
   return (
     <div className="fixed bottom-6 right-6 z-40 animate-scaleIn">
-      <div className="bg-orange-500 text-white rounded-2xl shadow-2xl p-6 w-72">
+      <div className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl shadow-2xl p-6 w-72 relative overflow-hidden">
+        <div className="absolute -top-2 -right-2 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold transform rotate-12 shadow-md">
+          ACTIE!
+        </div>
         <div className="text-center mb-4">
-          <p className="text-base font-bold mb-1">Hulp nodig?</p>
-          <p className="text-sm opacity-90">Direct contact met onze experts</p>
+          <p className="text-lg font-bold mb-1">💬 Persoonlijk advies?</p>
+          <p className="text-sm opacity-90">Profiteer van onze actie</p>
         </div>
         <div className="space-y-3">
           <Button

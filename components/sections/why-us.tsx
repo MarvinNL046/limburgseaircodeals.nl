@@ -61,11 +61,14 @@ export function WhyUs() {
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-100 text-green-700 rounded-full mb-4">
+            <span className="text-sm font-semibold">✅ 500+ tevreden klanten in 2024</span>
+          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Airco Specialist Limburg
+            Waarom 93% Voor Ons Kiest
           </h2>
           <p className="text-lg text-gray-600">
-            Uw vertrouwde airco bedrijf in Limburg - Airco plaatsen in Parkstad, Maastricht, Sittard-Geleen en omstreken
+            <strong>4.7 ⭐ Google score</strong> • 163 reviews • Meest gekozen in Limburg
           </p>
         </div>
 

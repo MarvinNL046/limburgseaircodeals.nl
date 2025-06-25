@@ -180,11 +180,14 @@ export function ContactOptimized() {
 
           {/* Contact Form */}
           <div>
-            <Card className="shadow-lg h-full">
+            <Card className="shadow-lg h-full relative overflow-hidden">
+              <div className="absolute top-0 right-0 bg-green-500 text-white px-3 py-1 text-xs font-bold">
+                ✓ 100% Gratis & Vrijblijvend
+              </div>
               <CardHeader>
-                <CardTitle className="text-2xl">Stuur ons een bericht</CardTitle>
+                <CardTitle className="text-2xl">Start Uw Aanvraag - 2 Minuten</CardTitle>
                 <CardDescription>
-                  Vul het formulier in en we nemen binnen 24 uur contact op
+                  <span className="font-semibold text-orange-600">⏱️ Gemiddelde reactietijd: 2 uur</span>
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -261,24 +264,34 @@ export function ContactOptimized() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-white"
+                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
                   >
                     {isSubmitting ? (
                       'Verzenden...'
                     ) : (
                       <>
-                        <Send className="w-4 h-4 mr-2" />
-                        Verstuur Bericht
+                        <Send className="w-5 h-5 mr-2" />
+                        Ontvang Uw Offerte →
                       </>
                     )}
                   </Button>
 
-                  <p className="text-xs text-gray-500 text-center">
-                    Door dit formulier te verzenden gaat u akkoord met onze{' '}
-                    <a href="/privacy" className="text-blue-600 hover:underline">
-                      privacyverklaring
-                    </a>
-                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+                      <span className="flex items-center gap-1">
+                        ✓ <span className="font-medium">Gratis offerte</span>
+                      </span>
+                      <span className="flex items-center gap-1">
+                        ✓ <span className="font-medium">Geen verplichtingen</span>
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-500 text-center">
+                      Door dit formulier te verzenden gaat u akkoord met onze{' '}
+                      <a href="/privacy" className="text-blue-600 hover:underline">
+                        privacyverklaring
+                      </a>
+                    </p>
+                  </div>
                 </form>
               </CardContent>
             </Card>

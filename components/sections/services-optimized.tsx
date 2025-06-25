@@ -23,10 +23,10 @@ const services = [
     title: 'Onderhoud & Service',
     description: 'Regelmatig onderhoud voor optimale prestaties en langere levensduur van uw airco.',
     features: [
-      'Jaarlijkse onderhoudsbeurt',
+      'Onderhoud vanaf €11/maand',
+      'Losse beurt voor €149',
       'Filter reiniging & vervanging',
-      'Koelvloeistof controle',
-      'Onderhoudscontract mogelijk'
+      'Verleng levensduur met 10 jaar'
     ],
     link: '/diensten/onderhoud'
   },
@@ -35,7 +35,7 @@ const services = [
     title: 'Reparatie & Storing',
     description: 'Professionele storingsdienst voor snelle oplossing van airco problemen in heel Limburg.',
     features: [
-      'Bereikbaar tijdens kantooruren',
+      'Ma-Vr 09:00-17:00 bereikbaar',
       'Snelle responstijd',
       'Ervaren monteurs',
       'Transparante prijzen'
@@ -50,11 +50,14 @@ export function ServicesOptimized() {
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 text-red-700 rounded-full mb-4">
+            <span className="text-sm font-semibold">🔥 ZOMER ACTIE: Installatie binnen 48 uur mogelijk!</span>
+          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Airco Service Limburg
+            Waarom Nu Een Airco Installeren?
           </h2>
           <p className="text-lg text-gray-600">
-            Uw airco specialist in Zuid-Limburg - Van Maastricht tot Roermond, van Heerlen tot Sittard
+            <strong>30°C+ verwacht deze zomer</strong> • Voorkom lange wachttijden • Profiteer van lage prijzen
           </p>
         </div>
 
@@ -63,7 +66,12 @@ export function ServicesOptimized() {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <Card key={index} className="relative overflow-hidden hover:shadow-xl transition-shadow duration-300 bg-white">
+              <Card key={index} className="relative overflow-hidden hover:shadow-xl transition-all duration-300 bg-white hover:scale-105">
+                {index === 0 && (
+                  <div className="absolute -top-1 -right-1 bg-red-500 text-white px-3 py-1 rounded-bl-lg text-xs font-bold z-10">
+                    POPULAIR
+                  </div>
+                )}
                 {/* Icon Header */}
                 <div className="h-2 bg-gradient-to-r from-blue-600 to-blue-700" />
                 <CardHeader>

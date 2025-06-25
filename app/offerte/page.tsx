@@ -4,8 +4,8 @@ import { PriceCalculator } from "@/components/calculators/price-calculator"
 import { ContactForm } from "@/components/contact-form"
 
 export const metadata: Metadata = {
-  title: "Offerte Aanvragen | Airco Installatie Brunssum",
-  description: "Vraag een vrijblijvende offerte aan voor uw airconditioning project. Ontvang binnen 24 uur een offerte op maat.",
+  title: "Gratis Airco Offerte Limburg → Binnen 2 Uur Reactie | -30% Korting",
+  description: "📋 Vraag NU gratis offerte aan! ✓ Persoonlijk advies ✓ Scherpe prijzen ✓ Binnen 2 uur reactie ✓ Geen kleine lettertjes. Profiteer van onze winteractie!",
 }
 
 export default function OffertePage() {

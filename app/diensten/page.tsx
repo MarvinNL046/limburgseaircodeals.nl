@@ -7,8 +7,8 @@ import Link from "next/link"
 import diensten from "@/data/diensten.json"
 
 export const metadata: Metadata = {
-  title: "Onze Diensten | Airco Installatie Brunssum",
-  description: "Bekijk ons complete aanbod van airconditioning diensten in Limburg. Van installatie en onderhoud tot reparatie, wij zijn uw betrouwbare partner.",
+  title: "Airco Diensten Limburg | Onderhoud vanaf €11/maand | Ma-Vr Service",
+  description: "✓ Airco installatie binnen 48u ✓ Onderhoud vanaf €11/maand of €149 losse beurt ✓ Storingsdienst Ma-Vr in heel Limburg. Profiteer van onze winteractie! ☎ 046-2021430",
   keywords: [
     "airco diensten",
     "airconditioning services",

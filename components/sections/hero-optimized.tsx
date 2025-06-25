@@ -110,14 +110,14 @@ export function HeroOptimized() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
               </span>
-              <span className="text-sm font-medium text-orange-300">Binnen 24u reactie gegarandeerd</span>
+              <span className="text-sm font-medium text-orange-300">🔥 NU: Gratis installatie bij complete systemen</span>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Airco Installateur
-                <span className="block text-orange-500 mt-2">Limburg</span>
+                #1 Airco Installateur
+                <span className="block text-orange-500 mt-2">in Limburg</span>
               </h1>
               
               {/* Typewriter Effect */}
@@ -152,10 +152,10 @@ export function HeroOptimized() {
             {/* USP List */}
             <ul className="space-y-3">
               {[
-                'Gratis offerte & advies op locatie',
-                'Alle topmerken: Daikin, Mitsubishi, LG & meer',
-                'Installatie binnen 3-5 werkdagen',
-                'Onderhoud & 24/7 storingsdienst'
+                '✓ Laagste prijs garantie - Vind u elders goedkoper bij een BRL 100 & 200 gecertificeerd bedrijf? Wij matchen!',
+                '✓ Binnen 3 dagen geïnstalleerd (of sneller bij spoed)',
+                '✓ Alle topmerken: Daikin, Mitsubishi, LG & Samsung',
+                '✓ Onderhoud vanaf €11/maand - Inclusief 5 jaar garantie'
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
@@ -172,7 +172,7 @@ export function HeroOptimized() {
                 onClick={() => window.location.href = 'tel:0462021430'}
               >
                 <Phone className="w-5 h-5 mr-2" />
-                Bel Direct: 046 202 1430
+                Bel Nu - Vandaag Nog Advies!
               </Button>
               <Button
                 size="lg"
@@ -190,18 +190,18 @@ export function HeroOptimized() {
           <div className="relative">
             {/* Ribbon */}
             <div className="absolute -top-4 -right-4 z-20">
-              <div className="bg-orange-500 text-white px-6 py-2 rounded-full shadow-lg transform rotate-12">
+              <div className="bg-red-600 text-white px-6 py-2 rounded-full shadow-lg transform rotate-12 animate-bounce">
                 <div className="flex items-center gap-2 text-sm font-bold">
-                  <Clock className="w-4 h-4" />
-                  <span>24u Reactie</span>
+                  <span className="text-lg">⚡</span>
+                  <span>BEPERKTE ACTIE</span>
                 </div>
               </div>
             </div>
 
             {/* Form Card */}
             <div id="contact-form" className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 lg:p-8 shadow-2xl">
-              <h3 className="text-2xl font-bold text-white mb-2">Vraag Direct Offerte Aan</h3>
-              <p className="text-gray-300 mb-6">Vul het formulier in voor een vrijblijvende offerte</p>
+              <h3 className="text-2xl font-bold text-white mb-2">Vraag Uw Persoonlijke Offerte Aan</h3>
+              <p className="text-gray-300 mb-6">🎯 Nog 8 acties beschikbaar deze maand</p>
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div>
@@ -261,9 +261,9 @@ export function HeroOptimized() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
                 >
-                  {isSubmitting ? 'Verzenden...' : 'Verstuur Aanvraag'}
+                  {isSubmitting ? 'Verzenden...' : '→ Claim Uw Korting Nu'}
                 </Button>
 
                 <p className="text-xs text-gray-300 text-center">

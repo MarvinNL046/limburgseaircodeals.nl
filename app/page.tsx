@@ -10,8 +10,8 @@ import { generateOrganizationSchema } from "@/lib/schema"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: 'Limburgse Airco Deals | #1 in Airconditioning ✓',
-  description: 'Dé airco specialist van Limburg! Professionele airco installatie voor woning en bedrijf door StayCool Airco. ✓ Gratis offerte ✓ Erkend installateur ✓ Alle topmerken ✓ 5 jaar garantie. Bel: 046 202 1430',
+  title: 'Airco Installateur Limburg → Nr.1 in 2024 | Gratis Installatie',
+  description: '⚡ ACTIE: Gratis installatie t/m december! Airco kopen & installeren in heel Limburg. ✅ Binnen 48u geïnstalleerd ✅ Laagste prijs garantie ✅ 4.7★ Google score. Bel direct: 046-2021430',
   alternates: {
     canonical: 'https://limburgseaircodeals.nl'
   }
