@@ -15,11 +15,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { route: 'diensten', priority: 0.9 },
     { route: 'contact', priority: 0.8 },
     { route: 'over-ons', priority: 0.7 },
+    { route: 'producten', priority: 0.7 }, // Added products page
     { route: 'faq', priority: 0.7 },
     { route: 'blog', priority: 0.6 },
     { route: 'kennisbank', priority: 0.6 },
     { route: 'merken', priority: 0.6 },
     { route: 'steden', priority: 0.8 },
+    { route: 'privacy', priority: 0.4 }, // Added privacy page
+    { route: 'voorwaarden', priority: 0.4 }, // Added terms page
+    { route: 'sitemap', priority: 0.3 }, // Added sitemap page
   ].map((page) => ({
     url: `${siteUrl}/${page.route}`,
     lastModified,
@@ -72,6 +76,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }))
 
+  // Generate kennisbank article URLs
+  const kennisbankArticles = [
+    'verwarmen-met-airco',
+    'voordelen-airconditioning',
+    'storingscode-gids',
+    'veelvoorkomende-problemen',
+    'soorten-airco',
+    'onderhoud-tips',
+    'scop-seer-waarden',
+    'koudemiddelen',
+    'klimaatbeheersing',
+    'hoe-werkt-airco',
+    'energiebesparing',
+    'airco-luchtfilter-onderhoud',
+    'airco-installatie-maastricht',
+  ]
+
+  const kennisbankUrls = kennisbankArticles.map((slug) => ({
+    url: `${siteUrl}/kennisbank/${slug}`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+
   // Generate service-city combination URLs with dynamic priorities and focus on Maastricht
   const serviceCityUrls = diensten.flatMap((dienst) =>
     cities.map((city) => ({
@@ -91,6 +119,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...serviceUrls,
     ...blogUrls,
     ...brandUrls,
+    ...kennisbankUrls,
     ...serviceCityUrls,
   ]
 }
