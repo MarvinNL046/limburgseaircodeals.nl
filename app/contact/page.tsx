@@ -12,7 +12,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Telefoon',
-    content: '0462021430',
+    content: '046 202 1430',
     href: 'tel:0462021430',
   },
   {

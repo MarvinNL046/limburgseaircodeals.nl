@@ -139,7 +139,7 @@ export function StickyCTABanner() {
             size="default"
             variant="outline"
             className="bg-transparent border-2 border-white text-white hover:bg-white/20 w-full font-semibold"
-            onClick={() => window.open('https://wa.me/31462021430', '_blank')}
+            onClick={() => window.open('https://wa.me/31636481054', '_blank')}
           >
             <MessageSquare className="w-4 h-4 mr-2" />
             WhatsApp

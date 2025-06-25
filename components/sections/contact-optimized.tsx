@@ -158,7 +158,7 @@ export function ContactOptimized() {
                   </p>
                   <Button
                     className="w-full bg-green-600 hover:bg-green-700 text-white"
-                    onClick={() => window.open('https://wa.me/31462021430', '_blank')}
+                    onClick={() => window.open('https://wa.me/31636481054', '_blank')}
                   >
                     Open WhatsApp
                   </Button>

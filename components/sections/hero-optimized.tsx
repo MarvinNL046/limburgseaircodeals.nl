@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
-import { Phone, Mail, CheckCircle, Star, Clock, Shield, Award } from 'lucide-react'
+import { Phone, Mail, CheckCircle, Star, Shield, Award } from 'lucide-react'
 import { toast } from 'sonner'
 import emailjs from '@emailjs/browser'
 
