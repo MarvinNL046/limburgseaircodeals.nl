@@ -56,11 +56,11 @@ export function CTABannerOptimized({ theme = 'light', position = 'top' }: CTABan
             </div>
             <div className={`text-center sm:text-left ${textColor}`}>
               <p className="text-sm sm:text-base font-semibold">
-                ⚡ LAATSTE KANS: Extra voordeel + Gratis installatie deze week!
+                🔥 ACTIE: Tot 40% korting op geselecteerde airco's + vakkundige installatie!
               </p>
               <p className="text-xs sm:text-sm opacity-90">
                 <Clock className="inline w-3 h-3 mr-1 animate-pulse" />
-                <span className="font-bold">Nog 72 uur</span> • Direct boeken = Direct voordeel
+                <span className="font-bold">Beperkte voorraad</span> • Profiteer van de laagste prijzen
               </p>
             </div>
           </div>
@@ -117,13 +117,13 @@ export function StickyCTABanner() {
   if (!isVisible) return null
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 animate-scaleIn">
-      <div className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl shadow-2xl p-6 w-72 relative overflow-hidden">
-        <div className="absolute -top-2 -right-2 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold transform rotate-12 shadow-md">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 animate-scaleIn max-w-[calc(100vw-2rem)]">
+      <div className="bg-gradient-to-br from-orange-500 to-red-600 text-white rounded-2xl shadow-2xl p-4 sm:p-6 w-64 sm:w-72 relative overflow-hidden">
+        <div className="absolute -top-2 -right-2 bg-yellow-400 text-gray-900 px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold transform rotate-12 shadow-md">
           ACTIE!
         </div>
         <div className="text-center mb-4">
-          <p className="text-lg font-bold mb-1">💬 Persoonlijk advies?</p>
+          <p className="text-base sm:text-lg font-bold mb-1">💬 Persoonlijk advies?</p>
           <p className="text-sm opacity-90">Profiteer van onze actie</p>
         </div>
         <div className="space-y-3">
@@ -147,7 +147,7 @@ export function StickyCTABanner() {
         </div>
         <button
           onClick={() => setIsVisible(false)}
-          className="absolute -top-2 -right-2 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors shadow-lg"
+          className="absolute top-2 right-2 w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors shadow-lg"
           aria-label="Sluit"
         >
           <X className="w-4 h-4 text-white" />

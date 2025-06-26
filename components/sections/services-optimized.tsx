@@ -53,7 +53,7 @@ export function ServicesOptimized() {
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 text-red-700 rounded-full mb-4">
             <span className="text-sm font-semibold">🔥 ZOMER ACTIE: Installatie binnen 48 uur mogelijk!</span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Waarom Nu Een Airco Installeren?
           </h2>
           <p className="text-lg text-gray-600">
@@ -66,7 +66,7 @@ export function ServicesOptimized() {
           {services.map((service, index) => {
             const Icon = service.icon
             return (
-              <Card key={index} className="relative overflow-hidden hover:shadow-xl transition-all duration-300 bg-white hover:scale-105">
+              <Card key={index} className="relative overflow-hidden hover:shadow-xl transition-all duration-300 bg-white hover:scale-[1.02]">
                 {index === 0 && (
                   <div className="absolute -top-1 -right-1 bg-red-500 text-white px-3 py-1 rounded-bl-lg text-xs font-bold z-10">
                     POPULAIR
@@ -90,12 +90,12 @@ export function ServicesOptimized() {
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-sm text-gray-700">{feature}</span>
+                        <span className="text-sm sm:text-base text-gray-700">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <Link href={service.link}>
-                    <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white">
+                    <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white min-h-[44px]">
                       Meer informatie
                     </Button>
                   </Link>
@@ -109,7 +109,7 @@ export function ServicesOptimized() {
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Video Content */}
-            <div className="p-8 lg:p-12">
+            <div className="p-6 sm:p-8 lg:p-12">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 Airco Service Sittard, Geleen & Heerlen
               </h3>
@@ -159,7 +159,7 @@ export function ServicesOptimized() {
           <div className="flex flex-wrap gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg min-h-[44px] px-6 text-sm sm:text-base"
               onClick={() => window.location.href = 'tel:0462021430'}
             >
               Bel Direct: 046 202 1430
@@ -167,7 +167,7 @@ export function ServicesOptimized() {
             <Button
               size="lg"
               variant="outline"
-              className="border-gray-300 hover:bg-gray-50"
+              className="border-gray-300 hover:bg-gray-50 min-h-[44px] px-6 text-sm sm:text-base"
               asChild
             >
               <Link href="/offerte">Vraag Offerte Aan</Link>

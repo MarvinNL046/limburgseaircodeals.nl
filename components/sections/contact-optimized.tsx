@@ -102,7 +102,7 @@ export function ContactOptimized() {
       <div className="container">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Airco Installatie Limburg - Contact
           </h2>
           <p className="text-lg text-gray-600">
@@ -264,7 +264,7 @@ export function ContactOptimized() {
                   <Button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02] min-h-[48px]"
                   >
                     {isSubmitting ? (
                       'Verzenden...'

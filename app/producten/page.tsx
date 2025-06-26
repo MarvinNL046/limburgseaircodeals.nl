@@ -1,6 +1,5 @@
 import { Metadata } from "next"
 import { ProductShowcase } from "@/components/sections/product-showcase"
-import { CTABannerOptimized } from "@/components/sections/cta-banner-optimized"
 
 export const metadata: Metadata = {
   title: 'Airco Modellen & Prijzen | Alle Merken | Limburgse Airco Deals',
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
 export default function ProductenPage() {
   return (
     <>
-      <CTABannerOptimized theme="light" position="top" />
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-900 to-gray-900 text-white pt-32 pb-16">

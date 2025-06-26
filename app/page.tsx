@@ -5,13 +5,13 @@ import { WhyUs } from "@/components/sections/why-us"
 import { BrandLogos } from "@/components/sections/brand-logos"
 import { ProductShowcase } from "@/components/sections/product-showcase"
 import { ContactOptimized } from "@/components/sections/contact-optimized"
-import { CTABannerOptimized, StickyCTABanner } from "@/components/sections/cta-banner-optimized"
+import { CTABannerOptimized } from "@/components/sections/cta-banner-optimized"
 import { generateOrganizationSchema } from "@/lib/schema"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: 'Airco Installateur Limburg → Nr.1 in 2024 | Gratis Installatie',
-  description: '⚡ ACTIE: Gratis installatie t/m december! Airco kopen & installeren in heel Limburg. ✅ Binnen 48u geïnstalleerd ✅ Laagste prijs garantie ✅ 4.7★ Google score. Bel direct: 046-2021430',
+  title: 'Airco Installateur Limburg → Nr.1 in 2024 | Professionele Service',
+  description: '🔥 ACTIE: Tot 40% korting op airco systemen! Airco kopen & installeren in heel Limburg. ✅ Binnen 48u geïnstalleerd ✅ Laagste prijs garantie ✅ 4.7★ Google score. Bel direct: 046-2021430',
   alternates: {
     canonical: 'https://limburgseaircodeals.nl'
   }
@@ -36,8 +36,6 @@ export default function HomePage() {
         <BrandLogos />
         <ProductShowcase />
         <ContactOptimized />
-        <CTABannerOptimized theme="dark" position="bottom" />
-        <StickyCTABanner />
       </main>
     </>
   )

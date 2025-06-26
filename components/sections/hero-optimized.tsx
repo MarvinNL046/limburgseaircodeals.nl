@@ -88,7 +88,7 @@ export function HeroOptimized() {
   }
 
   return (
-    <section className="relative min-h-[100vh] flex items-center overflow-hidden pt-[132px] lg:pt-[140px]">
+    <section className="relative min-h-[100vh] flex items-center overflow-hidden pt-20 sm:pt-24 lg:pt-[140px]">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900" />
       
@@ -110,19 +110,19 @@ export function HeroOptimized() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
               </span>
-              <span className="text-sm font-medium text-orange-300">🔥 NU: Gratis installatie bij complete systemen</span>
+              <span className="text-xs sm:text-sm font-medium text-orange-300">🔥 NU: Laagste prijsgarantie</span>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 #1 Airco Installateur
                 <span className="block text-orange-500 mt-2">in Limburg</span>
               </h1>
               
               {/* Typewriter Effect */}
               <div className="h-16 flex items-center">
-                <p className="text-xl md:text-2xl text-gray-300">
+                <p className="text-lg sm:text-xl md:text-2xl text-gray-300">
                   {displayText}
                   <span className="inline-block w-0.5 h-6 bg-orange-500 ml-1 animate-blink"></span>
                 </p>
@@ -159,7 +159,7 @@ export function HeroOptimized() {
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-200">{item}</span>
+                  <span className="text-sm sm:text-base text-gray-200">{item}</span>
                 </li>
               ))}
             </ul>
@@ -168,20 +168,20 @@ export function HeroOptimized() {
             <div className="flex flex-wrap gap-4 pt-4">
               <Button
                 size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 shadow-lg hover:shadow-xl transition-all duration-200"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 shadow-lg hover:shadow-xl transition-all duration-200 min-h-[44px]"
                 onClick={() => window.location.href = 'tel:0462021430'}
               >
-                <Phone className="w-5 h-5 mr-2" />
-                Bel Nu - Vandaag Nog Advies!
+                <Phone className="w-4 sm:w-5 h-4 sm:h-5 mr-2" />
+                <span className="text-sm sm:text-base">Bel Direct</span>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-gray-900 font-semibold"
+                className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-gray-900 font-semibold min-h-[44px]"
                 onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                <Mail className="w-5 h-5 mr-2" />
-                Gratis Offerte
+                <Mail className="w-4 sm:w-5 h-4 sm:h-5 mr-2" />
+                <span className="text-sm sm:text-base">Gratis Offerte</span>
               </Button>
             </div>
           </div>
@@ -190,7 +190,7 @@ export function HeroOptimized() {
           <div className="relative">
             {/* Ribbon */}
             <div className="absolute -top-4 -right-4 z-20">
-              <div className="bg-red-600 text-white px-6 py-2 rounded-full shadow-lg transform rotate-12 animate-bounce">
+              <div className="bg-red-600 text-white px-4 sm:px-6 py-1 sm:py-2 rounded-full shadow-lg transform rotate-12 animate-pulse">
                 <div className="flex items-center gap-2 text-sm font-bold">
                   <span className="text-lg">⚡</span>
                   <span>BEPERKTE ACTIE</span>
@@ -261,7 +261,7 @@ export function HeroOptimized() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02] min-h-[48px]"
                 >
                   {isSubmitting ? 'Verzenden...' : '→ Claim Uw Korting Nu'}
                 </Button>

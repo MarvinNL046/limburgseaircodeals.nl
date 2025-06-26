@@ -178,10 +178,11 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className={`lg:hidden p-2 rounded-md ${
+            className={`lg:hidden p-2 rounded-md min-w-[44px] min-h-[44px] flex items-center justify-center ${
               isScrolled || !isHomePage ? 'text-gray-700' : 'text-white'
             }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Menu"
           >
             {isMobileMenuOpen ? (
               <X className="w-6 h-6" />
@@ -201,7 +202,7 @@ export function Navbar() {
                 <div key={item.name}>
                   {item.submenu ? (
                     <details className="group">
-                      <summary className="flex items-center justify-between px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md cursor-pointer">
+                      <summary className="flex items-center justify-between px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-md cursor-pointer min-h-[44px]">
                         <span>{item.name}</span>
                         <ChevronDown className="w-4 h-4 transition-transform group-open:rotate-180" />
                       </summary>
@@ -221,7 +222,7 @@ export function Navbar() {
                   ) : (
                     <Link
                       href={item.href}
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50 rounded-md"
+                      className="block px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-md min-h-[44px]"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.name}
