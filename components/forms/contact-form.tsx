@@ -14,6 +14,7 @@ export function ContactForm() {
     name: "",
     email: "",
     phone: "",
+    city: "",
     message: "",
   })
 
@@ -28,6 +29,7 @@ export function ContactForm() {
         name: "",
         email: "",
         phone: "",
+        city: "",
         message: "",
       })
     } catch (error) {
@@ -57,6 +59,12 @@ export function ContactForm() {
         placeholder="Uw telefoonnummer"
         value={formData.phone}
         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+        required
+      />
+      <Input
+        placeholder="Uw woonplaats"
+        value={formData.city}
+        onChange={(e) => setFormData({ ...formData, city: e.target.value })}
         required
       />
       <Textarea

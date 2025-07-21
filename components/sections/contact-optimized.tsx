@@ -11,12 +11,13 @@ import { Textarea } from '@/components/ui/textarea'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Phone, Mail, MapPin, Clock, Send, MessageSquare, Navigation } from 'lucide-react'
 import { toast } from 'sonner'
-import emailjs from '@emailjs/browser'
+import { sendEmail } from '@/lib/emailjs'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Naam moet minimaal 2 karakters bevatten'),
   email: z.string().email('Ongeldig e-mailadres'),
   phone: z.string().min(10, 'Telefoonnummer is verplicht'),
+  city: z.string().min(2, 'Woonplaats is verplicht'),
   subject: z.string().min(3, 'Onderwerp is verplicht'),
   message: z.string().min(10, 'Bericht moet minimaal 10 karakters bevatten'),
 })
@@ -74,19 +75,13 @@ export function ContactOptimized() {
     setIsSubmitting(true)
     
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        {
-          from_name: data.name,
-          from_email: data.email,
-          phone: data.phone,
-          subject: data.subject,
-          message: data.message,
-          to_name: 'StayCool Airco',
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      )
+      await sendEmail({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        city: data.city,
+        message: `${data.subject}: ${data.message}`
+      })
       
       toast.success('Bericht verzonden! We nemen spoedig contact met u op.')
       reset()
@@ -232,6 +227,19 @@ export function ContactOptimized() {
                     />
                     {errors.email && (
                       <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <Label htmlFor="city">Woonplaats *</Label>
+                    <Input
+                      id="city"
+                      {...register('city')}
+                      placeholder="Bijv. Maastricht"
+                      className="mt-1"
+                    />
+                    {errors.city && (
+                      <p className="text-red-500 text-sm mt-1">{errors.city.message}</p>
                     )}
                   </div>
 

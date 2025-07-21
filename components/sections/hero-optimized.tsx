@@ -10,12 +10,13 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Phone, Mail, CheckCircle, Star, Shield, Award } from 'lucide-react'
 import { toast } from 'sonner'
-import emailjs from '@emailjs/browser'
+import { sendEmail } from '@/lib/emailjs'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Naam is verplicht'),
   email: z.string().email('Ongeldig e-mailadres'),
   phone: z.string().min(10, 'Telefoonnummer is verplicht'),
+  city: z.string().min(2, 'Woonplaats is verplicht'),
   message: z.string().min(10, 'Bericht moet minimaal 10 karakters bevatten'),
 })
 
@@ -65,18 +66,13 @@ export function HeroOptimized() {
     setIsSubmitting(true)
     
     try {
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        {
-          from_name: data.name,
-          from_email: data.email,
-          phone: data.phone,
-          message: data.message,
-          to_name: 'StayCool Airco',
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-      )
+      await sendEmail({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        city: data.city,
+        message: data.message
+      })
       
       toast.success('Bedankt! We nemen binnen 24 uur contact met u op.')
       reset()
@@ -242,6 +238,19 @@ export function HeroOptimized() {
                   />
                   {errors.phone && (
                     <p className="text-red-400 text-sm mt-1">{errors.phone.message}</p>
+                  )}
+                </div>
+
+                <div>
+                  <Label htmlFor="city" className="text-white">Woonplaats *</Label>
+                  <Input
+                    id="city"
+                    {...register('city')}
+                    className="bg-white/90 border-white/30 text-gray-900 placeholder:text-gray-500"
+                    placeholder="Bijv. Maastricht"
+                  />
+                  {errors.city && (
+                    <p className="text-red-400 text-sm mt-1">{errors.city.message}</p>
                   )}
                 </div>
 
