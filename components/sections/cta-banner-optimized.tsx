@@ -24,7 +24,7 @@ export function CTABannerOptimized({ theme = 'light', position = 'top' }: CTABan
     // Show banner after a delay
     const timer = setTimeout(() => {
       setIsVisible(true)
-    }, position === 'top' ? 1000 : 5000)
+    }, position === 'top' ? 3000 : 8000)
 
     return () => clearTimeout(timer)
   }, [position])
@@ -40,58 +40,68 @@ export function CTABannerOptimized({ theme = 'light', position = 'top' }: CTABan
   if (!isVisible || hasInteracted) return null
 
   const bgColor = theme === 'dark' 
-    ? 'bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900' 
-    : 'bg-gradient-to-r from-orange-500 to-orange-600'
+    ? 'bg-gray-800/95 backdrop-blur-sm border-b border-gray-700' 
+    : 'bg-white/95 backdrop-blur-sm border-b border-gray-200'
 
-  const textColor = 'text-white'
+  const textColor = theme === 'dark' ? 'text-gray-100' : 'text-gray-700'
+  const accentColor = theme === 'dark' ? 'text-orange-400' : 'text-orange-600'
 
   return (
-    <div className={`fixed ${position === 'top' ? 'top-0' : 'bottom-0'} left-0 right-0 z-50 ${bgColor} shadow-lg`}>
+    <div className={`fixed ${position === 'top' ? 'top-0' : 'bottom-0'} left-0 right-0 z-50 ${bgColor} shadow-sm`}>
       <div className="container">
-        <div className="relative flex flex-col sm:flex-row items-center justify-between gap-4 py-3 px-4">
+        <div className="relative flex flex-col sm:flex-row items-center justify-between gap-3 py-2 px-4">
           {/* Left Content */}
-          <div className="flex items-center gap-4">
-            <div className="hidden sm:flex items-center justify-center w-10 h-10 bg-white/20 rounded-full">
-              <Zap className="w-5 h-5 text-white" />
+          <div className="flex items-center gap-3">
+            <div className={`hidden sm:flex items-center justify-center w-8 h-8 rounded-full ${theme === 'dark' ? 'bg-orange-500/20' : 'bg-orange-100'}`}>
+              <Zap className={`w-4 h-4 ${accentColor}`} />
             </div>
             <div className={`text-center sm:text-left ${textColor}`}>
-              <p className="text-sm sm:text-base font-semibold">
-                🔥 ACTIE: Tot 40% korting op geselecteerde airco's + vakkundige installatie!
+              <p className="text-xs sm:text-sm font-medium">
+                <span className={`${accentColor} font-semibold`}>Actie:</span> Tot 40% korting op geselecteerde airco's
               </p>
-              <p className="text-xs sm:text-sm opacity-90">
-                <Clock className="inline w-3 h-3 mr-1 animate-pulse" />
-                <span className="font-bold">Beperkte voorraad</span> • Profiteer van de laagste prijzen
+              <p className="text-xs opacity-75 hidden sm:block">
+                <Clock className="inline w-3 h-3 mr-1" />
+                Beperkte voorraad • Profiteer nu
               </p>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             <Button
               size="sm"
-              className="bg-white text-gray-900 hover:bg-gray-100 font-semibold shadow-sm"
+              className={`${theme === 'dark' 
+                ? 'bg-orange-500 text-white hover:bg-orange-600' 
+                : 'bg-orange-500 text-white hover:bg-orange-600'} font-medium shadow-sm h-8 px-3 text-xs`}
               onClick={() => window.location.href = 'tel:0462021430'}
             >
-              <Phone className="w-4 h-4 mr-1" />
+              <Phone className="w-3 h-3 mr-1" />
               <span className="hidden sm:inline">Bel Nu</span>
               <span className="sm:hidden">Bel</span>
             </Button>
             <Button
               size="sm"
-              className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 font-semibold"
+              variant="outline"
+              className={`${theme === 'dark' 
+                ? 'border-gray-600 text-gray-300 hover:bg-gray-700' 
+                : 'border-gray-300 text-gray-700 hover:bg-gray-100'} font-medium h-8 px-3 text-xs`}
               onClick={() => window.location.href = '/offerte'}
             >
-              Claim Korting
+              Bekijk Actie
             </Button>
           </div>
 
           {/* Close Button */}
           <button
             onClick={handleClose}
-            className={`absolute top-2 right-2 sm:static p-1 rounded-full hover:bg-white/20 transition-colors ${textColor}`}
+            className={`absolute top-1/2 -translate-y-1/2 right-2 sm:static sm:translate-y-0 p-1 rounded-full transition-colors ${
+              theme === 'dark' 
+                ? 'hover:bg-gray-700 text-gray-400' 
+                : 'hover:bg-gray-100 text-gray-500'
+            }`}
             aria-label="Sluit banner"
           >
-            <X className="w-4 h-4" />
+            <X className="w-3 h-3" />
           </button>
         </div>
       </div>
