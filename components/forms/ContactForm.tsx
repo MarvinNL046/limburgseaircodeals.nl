@@ -34,6 +34,11 @@ export default function ContactForm() {
       await sendEmail(formData);
       setStatus('success');
       setFormData({ name: '', email: '', phone: '', message: '' });
+
+      // Redirect to thank you page after showing success message
+      setTimeout(() => {
+        window.location.href = 'https://staycoolairco.nl/tot-snel';
+      }, 1500);
     } catch (error) {
       console.error('Error:', error);
       setStatus('error');
